@@ -9,7 +9,10 @@ HEAD
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "webcraft.settings")
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "WebCraft.settings")
-ebc76956bb50afa66fd35e0465f7faa3d1273b9b
+Django>=4.2
+channels>=4.0
+daphne>=4.0
+
 django.setup()
 
 players = {}
