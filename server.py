@@ -5,7 +5,11 @@ from channels.generic.websocket import AsyncJsonWebsocketConsumer
 from django.core.asgi import get_asgi_application
 from django.urls import path
 
+HEAD
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "webcraft.settings")
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "WebCraft.settings")
+ebc76956bb50afa66fd35e0465f7faa3d1273b9b
 django.setup()
 
 players = {}
