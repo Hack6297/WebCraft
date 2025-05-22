@@ -10,10 +10,15 @@ INSTALLED_APPS = [
 ASGI_APPLICATION = "webcraft.asgi.application"
 
 INSTALLED_APPS = [
-    ...
-    "channels",
-    ...
+    'channels',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 ]
+
 
 # Redis или InMemoryChannelLayer для локального теста
 CHANNEL_LAYERS = {
