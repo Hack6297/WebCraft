@@ -17,3 +17,4 @@ CHANNEL_LAYERS = {
 
 ROOT_URLCONF = ''
 MIDDLEWARE = []
+ROOT_URLCONF = 'WebCraft.urls'
