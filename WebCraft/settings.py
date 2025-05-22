@@ -7,14 +7,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-ASGI_APPLICATION = 'WebCraft.asgi.application'
+ASGI_APPLICATION = "webcraft.asgi.application"
 
+INSTALLED_APPS = [
+    ...
+    "channels",
+    ...
+]
+
+# Redis или InMemoryChannelLayer для локального теста
 CHANNEL_LAYERS = {
-    'default': {
-        'BACKEND': 'channels.layers.InMemoryChannelLayer',
-    },
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
 }
-
-ROOT_URLCONF = ''
-MIDDLEWARE = []
-ROOT_URLCONF = 'WebCraft.urls'
